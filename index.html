@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="script.js"></script>
+    <title>Интерфейс для функций</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+	<div class="container">
+    <div class="container-fluid">
+	<div class="calc">
+	<div class="row">
+		<div class="col-md-12">
+		<h1> Interns / Задание 4 / Жаринова Галина </h1>
+		<hr>
+		</div>
+	</div>
+	<div class="calc">
+	<div class="row">
+		<div class="col-md-4">
+		
+			<ul>
+				<h2> Меню </h2>
+				<li class="list-item">
+					Является ли строка палиндромом?
+				</li>
+				<li class="list-item">
+					Реализация функции substr
+				</li>
+				<li class="list-item">
+					Конвертер ДНК <-> РНК
+				</li>
+							</ul>
+		</div>
+		<div class="col-md-4">
+		<h2>
+				Конвертер ДНК -> РНК
+			</h2>
+			<div class="form-group">
+     <form name="formDna" method="post" onsubmit="return false">
+    <label for="dna">Введите цепь ДНК:</label>
+    <input type="text" name="dna" id="dna" pattern="[gtcaGTCA]{1,}" title="Используйте только буквы G, C, T, A в любом регистре" autofocus="" required="">
+    </div>
+	<p> <button class="btn btn-primary" type="submit" onclick="validateFormDna()">Получить РНК</button> </p>
+    </form>
+	<hr>
+	    <div style="color:#00c403" id="resultDna">Полученная цепь РНК: </div>
+   
+</div>
+<div class="col-md-4">
+		<h2>
+				Конвертер РНК -> ДНК
+			</h2>
+			<div class="form-group">
+      <form name="formRna" method="post" onsubmit="return false">
+    <label> Введите цепь РНК:</label>
+    <input type="text" name="rna" id="rna" pattern="[cgauCGAU]{1,}" title="Используйте только буквы C, G, A, U в любом регистре" autofocus="" required="">
+    </div>
+	<p><button class="btn btn-primary" type="submit" onclick="validateFormRna()">Получить ДНК</button></p>
+  </form>
+  <hr>
+    <div style="color:#00c403" id="resultRna">Полученная цепь ДНК: </div>
+  
+
+</div>
+			</div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
