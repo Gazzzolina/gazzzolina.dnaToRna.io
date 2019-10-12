@@ -21,7 +21,7 @@ function validateFormRna() {
     str = str.toUpperCase();
     const chars = {'G':'C','C':'G','T':'A','A':'U'};
     rna = str.replace(/[GCTA]/g, m => chars[m]);
-    document.getElementById('resultDna').innerHTML = `Полученная цепь РНК: ${rna}`;
+    document.getElementById('resultDna').innerHTML = `${rna}`;
     }
 
   function rnaToDna () {
@@ -29,5 +29,5 @@ function validateFormRna() {
     str = str.toUpperCase();
     const chars = {'C':'G','G':'C','A':'T','U':'A'};
     dna = str.replace(/[CGAU]/g, m => chars[m]);
-    document.getElementById('resultRna').innerHTML = `Полученная цепь ДНК: ${dna}`;
+    document.getElementById('resultRna').innerHTML = `${dna}`;
   }
